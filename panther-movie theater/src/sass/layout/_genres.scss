@@ -1,0 +1,91 @@
+.genres {
+    overflow: hidden;
+
+    &__container {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    &__genre {
+        overflow: hidden;
+        padding-top: 100%; /* 1:1 Aspect Ratio */
+        position: relative; /* If you want text inside of it */
+
+        &--action {
+            @include bg(action);
+        }
+        &--drama {
+            @include bg(drama);
+        }
+        &--comedy {
+            @include bg(comedy);
+        }
+        &--adventure {
+            @include bg(adventure);
+        }
+        &--sci-fi {
+            @include bg(sci-fi);
+        }
+        &--horror {
+            @include bg(horror);
+        }
+
+        @media only screen and (min-width: 576px) {
+            padding-top: 50%;
+        }
+        @media only screen and (min-width: 992px) {
+            padding-top: 33.333333333333333%;
+        }
+    }
+
+    &__text {
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__heading {
+        font-family: $p-font;
+        color: $color-tertiary;
+    }
+
+    &__p {
+        color: $color-quadr;
+        font-size: $small-font-size;
+    }
+
+    &__btn {
+        background-color: $color-tertiary;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 7rem;
+        height: 7rem;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+
+    &__link {
+        display: block;
+        position: absolute;
+        top: 1.7rem;
+        left: 3.5rem;
+        font-size: 4rem;
+        color: $color-quadr;
+        text-decoration: none;
+
+        &:link,
+        &:active {
+            color: $color-quadr;
+            text-decoration: none;
+        }
+
+        &:hover,
+        :focus {
+            color: $color-quadr-dark;
+            text-decoration: none;
+        }
+    }
+}

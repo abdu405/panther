@@ -1,0 +1,58 @@
+.movie {
+    
+    
+        display: flex;
+        flex-wrap: wrap;
+
+    &__info {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 4rem;
+
+       @include respond(phone){
+            width: 40%;
+        }
+
+        @include respond(tab-port){
+            width: 100%;
+        }
+       
+    }
+
+    &__text{
+
+        @include respond(tab-port){
+            width: 80%;
+        }
+    }
+
+    &__overview{
+
+        @include respond(phone){
+            width: 60%;
+        }
+    }
+
+    &__poster {
+
+        @include respond(tab-port){
+            width: 10%;
+        }
+        
+        img{
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+    &__video {
+        
+        margin: auto;
+        iframe {
+            display: block;
+            width: 30rem;
+            height: 17.5rem;
+            margin: auto;
+        }
+    }
+}

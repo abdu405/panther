@@ -1,0 +1,65 @@
+.movies {
+    // background-image: linear-gradient(bottom, $color-black, $color-primary-light);
+    background-color: $color-tertiary-light;
+    border-top: $color-grey-dark 1px solid;
+    border-bottom: $color-grey-dark 1px solid;
+    &__section {
+        position: relative;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__movie {
+        flex: 0 0 auto;
+        width: 15rem;
+        position: relative;
+        margin: 2rem;
+        border-radius: 0.7rem;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover {
+            transform: translateY(-0.5rem);
+            -webkit-box-shadow: 0px 0.5rem 0px 0px rgba($color-primary, 0.85);
+            -moz-box-shadow: 0px 0.5rem 0px 0px rgba($color-primary, 0.85);
+            box-shadow: 0px 0.5rem 0px 0px rgba($color-primary, 0.85);
+        }
+
+        &__heading {
+            color: $color-quadr;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    &__heading {
+        color: $color-primary;
+        width: max-content;
+        @include logo;
+    }
+
+    &__btn {
+        transform: scale(2);
+        color: rgba($color-primary, 0.85);
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+
+        &--right {
+            right: -1.2rem;
+        }
+        &--left {
+            left: -1.2rem;
+        }
+    }
+}

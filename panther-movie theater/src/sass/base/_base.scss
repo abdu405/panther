@@ -1,0 +1,56 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+html {
+
+
+    // This defines what 1rem is
+    font-size: 55%;
+
+    @include respond(sm-phone) { 
+        font-size: 60%; 
+    }
+
+    @include respond(phone) { 
+        font-size: 65%;
+    }
+
+    @include respond(tab-port) { 
+        font-size: 70%; 
+    }
+
+    @include respond(tab-land) { 
+        font-size: 75%;
+    }
+    @include respond(tab-land) { 
+        font-size: 80%;
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 85%; //1rem = 12, 12/16
+    }
+
+}
+
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $p-font;
+}
+
+img{
+    display: inline-block;
+}
+

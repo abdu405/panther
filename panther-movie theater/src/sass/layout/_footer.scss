@@ -1,0 +1,75 @@
+.footer {
+    background-color: $color-quadr;
+    text-align: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__heading {
+        font-size: $heading-pri-font-size;
+        @include logo;
+    }
+
+    &__link--logo {
+        text-decoration: none;
+        @include logo;
+
+        &:link,
+        &:active {
+            @include logo;
+        }
+
+        &:hover,
+        &:focus {
+            @include logo;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        @include respond(phone) {
+            flex-direction: row;
+        }
+    }
+
+    &__link--b {
+        width: 100%;
+        @include respond(phone) {
+            width: 45%;
+        }
+        @include respond(tab-land) {
+            width: 33%;
+        }
+    }
+    &__link {
+        display: inline-block;
+        text-decoration: none;
+        font-size: $default-font-size;
+        color: $color-primary;
+        margin: 0.5rem auto;
+
+
+        &:link,
+        &:active {
+            color: $color-primary;
+            text-decoration: none;
+        }
+        &:hover,
+        &:focus {
+            color: $color-primary-light;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+
+    &__copyright {
+        & > p {
+            font-size: $small-font-size;
+        }
+    }
+}

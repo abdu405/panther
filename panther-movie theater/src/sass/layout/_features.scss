@@ -1,0 +1,15 @@
+.features{
+    background-color: $color-grey-light-2;
+    color: $color-primary;
+    padding-top: 4.5rem ;
+    padding-bottom: 3rem ;
+
+    &__icon{
+        font-size: $icon-font-size;
+    }
+
+    &__heading{
+        margin-left: 1.5rem;
+        font-size: $heading-quadr-font-size;
+    }
+}

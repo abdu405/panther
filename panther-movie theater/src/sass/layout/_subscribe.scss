@@ -1,0 +1,78 @@
+.subscribe {
+    background-color: $color-secondary-dark;
+    color: $color-white;
+
+    &__heading {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 0.3rem;
+            width: 40%;
+            background-image: linear-gradient(
+                to left,
+                $color-primary,
+                $color-tertiary
+            );
+        }
+    }
+
+    &__input {
+        border-radius: 10rem;
+        border: none;
+        outline: none;
+        font-size: $default-font-size;
+        border: solid 2px transparent;
+
+        &::placeholder {
+            font-size: $default-font-size;
+        }
+
+        &:focus {
+            border: solid 2px $color-tertiary;
+            outline: none;
+        }
+    }
+
+    &__icon {
+        font-size: $icon-font-size;
+        text-decoration: none;
+
+        .fa-twitter {
+            color: $color-twitter;
+            &:hover{
+                color: $color-twitter-dark;
+
+            }
+        }
+
+        .fa-instagram {
+            background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(
+                top right,
+                $color-primary,
+                $color-tertiary
+            );
+
+            &:hover{
+                background-image: linear-gradient(
+                bottom left,
+                $color-primary,
+                $color-tertiary
+            );
+            }
+        }
+
+        .fa-facebook{
+            color: $color-secondary;
+
+            &:hover{
+                color: $color-facebook;
+            }
+        }
+    }
+}

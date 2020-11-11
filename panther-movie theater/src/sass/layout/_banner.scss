@@ -1,0 +1,33 @@
+.banner{
+    position: relative;
+
+    &__carousel{
+        height: 70vh;
+
+        &__item{
+            height: 70vh;
+            background: no-repeat fixed left;
+            background-size: cover;
+            transition: transform 1.5s ease, opacity .25s ease-out;
+
+            &--c1{
+                background-image: linear-gradient(bottom, $color-black, rgba($color-black, 0.3)),url('../resources/img/banner-bg-1.jpg');
+            }
+            &--c2{
+                background-image: linear-gradient(bottom, $color-black, rgba($color-black, 0.3)),url('../resources/img/banner-bg-2.jpg');
+            }
+            &--c3{
+                background-image: linear-gradient(bottom, $color-black, rgba($color-black, 0.3)),url('../resources/img/banner-bg-3.jpg');
+            }
+        }
+    }
+
+    &__heading{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) scale(2.5);
+
+        @include logo
+    }
+}

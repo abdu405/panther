@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>panther | movie theater</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
+
+    <!--Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+        <!--Font awesome icons -->
+        <script src="https://kit.fontawesome.com/e9325aed8a.js" crossorigin="anonymous"></script>
+
+    <!--Bootstrap StyleSheet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbarNav" class="navbar">
+            <div class="navbar__logo">
+                <a class="navbar__logo--link home" href="#">Panther</a>
+            </div>
+
+            <div id="navbar__btn" class="navbar__btn">
+                <span class="navbar__icon top-bar"></span>
+                <span class="navbar__icon middle-bar"></span>
+                <span class="navbar__icon bottom-bar"></span>
+            </div>
+            <div class="navbar__container">
+                <ul class="navbar__nav">
+                    <li class="navbar__item p-1">
+                        <a class="navbar__link active home" href="">Home</a>
+                    </li>
+                    <li class="navbar__item p-1">
+                        <a class="navbar__link" href="#">Features</a>
+                    </li>
+                    <li class="navbar__item p-1">
+                        <a class="navbar__link" href="#">Pricing</a>
+                    </li>
+                    <li class="navbar__item p-1">
+                        <a class="navbar__link " href="#">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="movie" class="movie">
+    </section>
+    <main>
+        <section id="banner" class="banner">
+            <div id="banner__carousel" class="carousel slide banner__carousel " data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item banner__carousel__item banner__carousel__item--c1  active">
+                    </div>
+                    <div class="carousel-item banner__carousel__item banner__carousel__item--c2 ">
+                    </div>
+                    <div class="carousel-item banner__carousel__item banner__carousel__item--c3 ">
+                    </div>
+                </div>
+            </div>
+            <div class="banner__heading pt-3">
+                <h1 class="text_center text-uppercase">Panther</h1>
+            </div>
+        </section>
+        <section id="movie-list" class="movie-list">
+            <div class="container text-center mx-auto py-5">
+
+                
+                <!--<div class="row movie-list__btns mx-auto text-center justify-content-around w-50 row mt-4" >
+                    <div class="dropdown movie-list__dropdown my-3">
+                        <button id="discover" class="btn movie-list__btn--big my-3 active">Discover movies</button>
+                    </div>
+                    <div class="dropdown movie-list__dropdown my-3">
+                        <button class="btn movie-list__btn--big my-3" " type=" button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Trending
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Week</a>
+                            <a class="dropdown-item" href="#">Day</a>
+                        </div>
+                    </div>
+                </div> -->
+                <form id="movie-list__form" class="movie-list__form mt-5">
+                    <div class="form-group">
+                        <input type="text" class="form-control movie-list__input py-4 px-5" id="searchInput" aria-describedby="emailHelp"
+                            placeholder="Search..." />
+                    </div>
+                
+                    <button type="submit" class="movie-list__btn--big active" id="search-btn">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+                <div class="row movie-list__btns mx-auto text-center justify-content-around row mt-4">
+                    <div class="dropdown movie-list__dropdown my-3">
+                        <button id="discover" class="btn movie-list__btn--main active">Discover movies</button>
+                    </div>
+                    <div class="dropdown movie-list__dropdown my-3">
+                        <button id="trending" class="btn movie-list__btn--main">Trending</button>
+                    </div>
+                    <div class="dropdown movie-list__dropdown my-3">
+                        <button id="topRated" class="btn movie-list__btn--main">Top rated</button>
+                    </div>
+                </div>
+                <div id="searchable" class="row  movie-list__list my-5">
+                    <!--<div id="" class="movie-list__item col-xs-12 col-sm-6 col-md-4 col-lg-3 my-4 w-75 mx-auto">
+                        <div id="movie-container" class="movie-list__img mb-4">
+                            <a href="#" class="text-decoration-none">
+                                <img src="resources/img/movie-poster.jpg" alt="" class="card-img img-fluid">
+                            </a>
+                        </div>
+                        <div class="movie-list__info text-left">
+                            
+                            <h3 class=" text-capitalize d-flex">
+                                <a href="#" class="text-decoration-none  movie-list__info--link d-block">title</a><span class="text-right ml-auto text-warning d-inline-block w-25">4.5 <i class="fa fa-star" aria-hidden="true"></i></span></h3>
+                                
+                            <h4 class="text-muted">year</h4>
+                        </div>
+                    </div>-->
+                </div>
+                <!--<div class="my-4">
+                    <a class=" movie-list__btn--main text-decoration-none">View more movies</a>
+                </div>-->
+            </div>
+        </section>
+        <section id="movies" class="movies">
+            <div class="movie__container px-5 py-3">
+                <div class="movies__section m-5">
+                <h2 class="movies__heading text-capitalize mb-4 ">Popular</h2>
+                <div id="popular" class="movies__list">
+                    <!--<div id="" class="movies__movie">
+                        <div class="movies__poster">
+                            <a href="#">
+                                <img  class="img-fluid" src="resources/img/movie-poster.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="movies__movie__heading  pl-2">
+                            <h3>title</h3>
+                        </div>
+                    </div>-->
+                </div>
+                <div id="slideRight--1" class="movies__btn
+                movies__btn--right">
+                    <h1>&#62;</h1>
+                </div>
+                <div id="slideLeft--1" class=" movies__btn movies__btn--left">
+                    <h1>&#60;</h1>
+                </div>
+            </div>
+            <div class="movies__section m-5">
+                <h2 class="movies__heading text-capitalize mb-4 ">upcoming</h2>
+                <div id="upcoming" class="movies__list">
+                    <!--<div id="" class="movies__movie">
+                        <div class="movies__poster">
+                            <a href="#">
+                                <img  class="img-fluid" src="resources/img/movie-poster.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="movies__movie__heading  pl-2">
+                            <h3>title</h3>
+                        </div>
+                    </div>-->
+                </div>
+                <div id="slideRight--2" class="movies__btn
+                                movies__btn--right">
+                    <h1>&#62;</h1>
+                </div>
+                <div id="slideLeft--2" class=" movies__btn movies__btn--left">
+                    <h1>&#60;</h1>
+                </div>
+            </div>
+            </div>
+            
+        </section>
+        <section id="features" class="features">
+            <div class="features__container container row justify-content-around
+            justify-content-md-between align-content-center mx-auto">
+                <div class="row features__feature col-md-6 align-content-start">
+                    <i class="fa fa-desktop features__icon d-block"></i>
+                    <h3 class="features__heading text-uppercase">ONLINE CINEMA</h3>
+                    <p class="features__p mt-3 mb-5">At Panther Cinema, you can watch any movie for free or at an affordable price (depending on the movie or TV series you are
+                    looking for). We have more than 500 movies as of now.</p>
+                </div>
+                <div class="row features__feature col-md-6 align-content-start">
+                    <i class="fa fa-pencil-square-o features__icon d-block"></i>
+                    <h3 class="features__heading text-uppercase">REVIEWS</h3>
+                    <p class="features__p mt-3 mb-5">Choose what you want to watch according to the reviews of movie critics and users of our website. You can also write
+                    your own review for any movie or TV series available at Panther.</p>
+                </div>
+                <div class="row features__feature col-md-6 align-content-start">
+                    <i class="fa fa-video-camera features__icon d-block"></i>
+                    <h3 class="features__heading text-uppercase">MOVIE NEWS</h3>
+                    <p class="features__p mt-3 mb-5">Read the latest news from our journalists about the facts, rumors, and updates from the movie world. Don’t forget to
+                    subscribe to our newsletter to receive the upcoming news.</p>
+                </div>
+                <div class="row features__feature col-md-6 align-content-start">
+                    <i class="fa fa-bullhorn features__icon d-block"></i>
+                    <h3 class="features__heading text-uppercase offset-2">REGULAR PROMOTIONS</h3>
+                    <p class="features__p mt-3 mb-5">If you are a PR manager of a movie studio, our promo toolkit is just what you need! Promote your movie with trailers and
+                    teasers, start a blog, and publish articles about your studio.</p>
+                </div>
+            </div>
+        </section>
+        <section id="subscribe" class="subscribe">
+            <div class="subsribe__container container py-5">
+                <div class="row">
+                    <div class="subscribe__section subscribe__section--1  col-md-6 my-5 pr-md-5">
+                        <h2 class="subscribe__heading text-uppercase pb-4 mb-5">GET THE LATEST NEWS FROM THE TEAM OF Panther</h2>
+                        <p class="subscribe__p">Keep up with our always upcoming news and updates. Enter your e-mail and subscribe to our newsletter.</p>
+                        <form action="#" class="subscribe__form">
+                            <input type="email" name="" id="" class="subscribe__input w-100 my-4 py-3 px-4" placeholder="Enter your e-mail">
+                            <button type="submit" class="subscribe__btn py-3 px-4">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="subscribe__section subscribe__section--2  col-md-6 my-5 pl-md-5">
+                        <h2 class="subscribe__heading text-uppercase pb-4 mb-5">FOLLOW US FOR NEWS</h2>
+                        <div class="subscribe__icons d-flex w-50 justify-content-between">
+                            <a href="" class="subscribe__icon"><i class="fa fa-twitter"></i></a>
+                            <a href="" class="subscribe__icon"><i class="fa fa-instagram"></i></a>
+                            
+                            <a href="" class="subscribe__icon"><i class="fa fa-facebook"></i></a>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section id="news" class="news">
+            <div class="news__container container">
+                <div class="row">
+                    <h3 class="news__heading text-center text-uppercase"></h3>
+                </div>
+                <div class="row">
+                    <div class="col col-md-6 news__section"></div>
+                    <div class="col col-md-6 news__section"></div>
+                </div>
+                <div class="row text-center text-uppercase mx-auto">
+                    <a href="#" class="news__btn"></a>
+                </div>
+            </div>
+        </section>-->
+        <section id="genres" class="genres ">
+            <div class="genres__container text-center row">
+                <div class=" genres__genre genres__genre--action col-sm-6 col-lg-4">
+                    <div class="genres__text">
+
+                        <h2 class="genres__heading text-uppercase">action</h2>
+                        <p class="genres__p">We have a variety of movies for you to enjoy. Just choose and download!</p>
+                    </div>
+                    <div class="genres__btn"><a href="" class="genres__link">+</a></div>
+                </div>
+                <div class=" genres__genre genres__genre--drama col-sm-6 col-lg-4">
+                    <div class="genres__text">
+
+                        <h2 class="genres__heading text-uppercase">drama</h2>
+                        <p class="genres__p">We have a variety of movies for you to enjoy. Just choose and download!</p>
+                    </div>
+                    <div class="genres__btn"><a href="" class="genres__link">+</a></div>
+                </div>
+                <div class=" genres__genre genres__genre--adventure col-sm-6 col-lg-4">
+                    <div class="genres__text">
+
+                        <h2 class="genres__heading text-uppercase">adventure</h2>
+                        <p class="genres__p">We have a variety of movies for you to enjoy. Just choose and download!</p>
+                    </div>
+                    <div class="genres__btn"><a href="" class="genres__link">+</a></div>
+                </div>
+                <div class=" genres__genre genres__genre--sci-fi col-sm-6 col-lg-4">
+                    <div class="genres__text">
+
+                        <h2 class="genres__heading text-uppercase">science fiction</h2>
+                        <p class="genres__p">We have a variety of movies for you to enjoy. Just choose and download!</p>
+                    </div>
+                    <div class="genres__btn"><a href="" class="genres__link">+</a></div>
+                </div>
+                <div class=" genres__genre genres__genre--horror col-sm-6 col-lg-4">
+                    <div class="genres__text">
+
+                        <h2 class="genres__heading text-uppercase">horror</h2>
+                        <p class="genres__p">We have a variety of movies for you to enjoy. Just choose and download!</p>
+                    </div>
+                    <div class="genres__btn"><a href="" class="genres__link">+</a></div>
+                </div>
+                <div class=" genres__genre genres__genre--comedy col-sm-6 col-lg-4">
+                    <div class="genres__text">
+
+                        <h2 class="genres__heading text-uppercase">comedy</h2>
+                        <p class="genres__p">We have a variety of movies for you to enjoy. Just choose and download!</p>
+                    </div>
+                    <div class="genres__btn"><a href="" class="genres__link">+</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="footer" class="footer">
+            <div class="footer__container container pt-3">
+                <div class="footer__logo mt-4">
+                    <h2 class="footer__heading"> <a href="" class="footer__link--logo home">panther</a> </h2>
+                </div>
+                <div class="footer__links my-4">
+                    <p class="footer__link--b">
+                        <a href="#" class="footer__link">Services</a>
+                    </p>
+                    <p class="footer__link--b">
+                        <a href="#" class="footer__link">About</a>
+                    </p>
+                    <p class="footer__link--b">
+                        <a href="#" class="footer__link">News</a>
+                    </p>
+                    <p class="footer__link--b">
+                        <a href="#" class="footer__link">Blog</a>
+                    </p>
+                    <p class="footer__link--b">
+                        <a href="#" class="footer__link">Reviews</a>
+                    </p>
+                    <p class="footer__link--b">
+                        <a href="#" class="footer__link">Contacts</a>
+                    </p>
+                </div>
+                <div class="footer__copyright text-muted mt-4">
+                    <p>&copy; 2020 <a href="#" class="footer__link--logo">Panther</a> Theme. Privacy Policy</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!--bootstrap jquery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+        <!--JS script-->
+        <script src="../dist/js/bundle.js"></script>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>
